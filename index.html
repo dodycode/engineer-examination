@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Timedoor Engineer Exam</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+</head>
+<body>
+	<!-- Section Pizza -->
+	<section class="container">
+		<p class="pizza-heading">Pizza</p>
+		<div class="pizza-container">
+			<label class="pizza-card">
+				<input type="radio" name="pizza" value="8" />
+				<img src="assets/img/pizza_1.jpg">
+				<div class="overlay">
+					<h2 class="pizza-title">PIZZA ONE</h2>
+					<h3 class="pizza-price">$8/pcs</h3>
+				</div>
+			</label>
+			<label class="pizza-card">
+				<input type="radio" name="pizza" value="10" />
+				<img src="assets/img/pizza_2.jpg">
+				<div class="overlay">
+					<h2 class="pizza-title">PIZZA TWO</h2>
+					<h3 class="pizza-price">$10/pcs</h3>
+				</div>
+			</label>
+			<label class="pizza-card">
+				<input type="radio" name="pizza" value="12" />
+				<img src="assets/img/pizza_3.jpg">
+				<div class="overlay">
+					<h2 class="pizza-title">PIZZA THREE</h2>
+					<h3 class="pizza-price">$12/pcs</h3>
+				</div>
+			</label>
+		</div>
+	</section>
+
+	<!-- Section Size -->
+	<section class="container">
+		<p class="pizza-heading">Size</p>
+		<div class="pizza-container">
+			<label class="food-size-card">
+				<input type="radio" name="size" value="small" disabled />
+				<h2>Small</h2>
+			</label>
+			<label class="food-size-card">
+				<input type="radio" name="size" value="medium" checked disabled />
+				<h2>Medium</h2>
+			</label>
+			<label class="food-size-card">
+				<input type="radio" name="size" value="large" disabled />
+				<h2>Large</h2>
+			</label>
+		</div>
+	</section>
+
+	<!-- Section Toppings -->
+	<section class="container">
+		<p class="pizza-heading">Toppings</p>
+		<div class="toppings-container">
+			<div class="toppings">
+				<div class="form-control">
+					<input id="avocado" type="checkbox" name="toppings" value="1" disabled /> Avocado
+				</div>
+				<div class="form-control">
+					<input id="broccoli" type="checkbox" name="toppings" value="1" disabled /> Broccoli
+				</div>
+				<div class="form-control">
+					<input id="onions" type="checkbox" name="toppings" value="1" disabled /> Onions
+				</div>
+				<div class="form-control">
+					<input id="zucchini" type="checkbox" name="toppings" value="1" disabled /> Zucchini
+				</div>
+			</div>
+			<div class="toppings">
+				<div class="form-control">
+					<input id="lobster" type="checkbox" name="toppings" value="2" disabled /> Lobster
+				</div>
+				<div class="form-control">
+					<input id="oyster" type="checkbox" name="toppings" value="2" disabled /> Oyster
+				</div>
+				<div class="form-control">
+					<input id="salmon" type="checkbox" name="toppings" value="2" disabled /> Salmon
+				</div>
+				<div class="form-control">
+					<input id="tuna" type="checkbox" name="toppings" value="2" disabled /> Tuna
+				</div>
+			</div>
+			<div class="toppings">
+				<div class="form-control">
+					<input id="bacon" type="checkbox" name="toppings" value="3" disabled /> Bacon
+				</div>
+				<div class="form-control">
+					<input id="duck" type="checkbox" name="toppings" value="3" disabled /> Duck
+				</div>
+				<div class="form-control">
+					<input id="ham" type="checkbox" name="toppings" value="3" disabled /> Ham
+				</div>
+				<div class="form-control">
+					<input id="sausage" type="checkbox" name="toppings" value="3" disabled /> Sausage
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Price -->
+	<section class="container">
+		<p class="pizza-heading" style="margin-bottom: 5px">Price</p>
+		<h2 style="margin: 0">$<span id="price"></span></h2>
+	</section>
+	
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
